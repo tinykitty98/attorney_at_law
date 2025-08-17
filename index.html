@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James Maus, Attorney at Law | Cincinnati, OH</title>
+  <meta name="description" content="Attorney James Maus — criminal & civil litigation, appellate advocacy, veteran JAG officer. Cincinnati-based counsel for Domestic Relations, Criminal Defense, Medical Malpractice, Personal Injury, Employment Law, Federal Disability Retirement, and Civil Rights/Police Misconduct." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    :root {
+      --ink: #0e1b2a;
+      --ink-2: #203549;
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --accent: #c6a164; /* subtle gold */
+      --accent-2: #345d7e; /* steel blue */
+      --muted: #6b7a90;
+      --ring: rgba(12, 18, 26, 0.08);
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(14, 27, 42, 0.12);
+    }
+
+    /* Base */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--accent-2); text-underline-offset: 3px; }
+
+    /* Layout helpers */
+    .container { width: min(1100px, 92%); margin-inline: auto; }
+    .grid { display: grid; gap: 1.25rem; }
+
+    /* Top bar */
+    .topbar { background: var(--ink); color: #fff; font-size: 0.95rem; }
+    .topbar .container { padding: 0.4rem 0; display: flex; justify-content: space-between; align-items: center; }
+    .topbar a { color: #fff; text-decoration: none; }
+
+    /* Header / Nav */
+    header { background: #fff; position: sticky; top: 0; z-index: 20; box-shadow: 0 2px 10px var(--ring); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 0; }
+    .brand { display: flex; gap: 0.75rem; align-items: baseline; font-weight: 700; letter-spacing: 0.3px; }
+    .brand .dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; display: inline-block; }
+    nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+    nav a { text-decoration: none; color: var(--ink); font-weight: 600; }
+    .cta { display: inline-block; padding: 0.65rem 1rem; border-radius: 999px; background: var(--accent-2); color: #fff; text-decoration: none; box-shadow: 0 6px 16px rgba(52,93,126,0.25); }
+
+    /* Hero */
+    .hero { background: radial-gradient(1200px 600px at 10% -10%, #e9eef4, transparent), #fff; border-bottom: 1px solid #e6ebf1; }
+    .hero .container { padding: 3.5rem 0; display: grid; gap: 2rem; }
+    .eyebrow { color: var(--accent-2); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; }
+    .hero h1 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin: 0.5rem 0; line-height: 1.2; }
+    .hero p { color: var(--muted); max-width: 65ch; }
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
+    .btn-outline { border: 1px solid var(--accent-2); color: var(--accent-2); padding: 0.6rem 1rem; border-radius: 999px; text-decoration: none; }
+
+    /* Cards / sections */
+    section { padding: 2.5rem 0; }
+    .section-title { font-size: 1.6rem; margin: 0 0 1rem; }
+    .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.2rem; border: 1px solid #e9eef4; }
+    .practice-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .badge { display: inline-block; padding: 0.25rem 0.6rem; background: #f0f3f7; border: 1px solid #e3e9f0; border-radius: 999px; font-size: 0.85rem; color: var(--ink-2); }
+
+    .features { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .feature h3 { margin: 0.2rem 0 0.4rem; font-size: 1.05rem; }
+    .feature p { color: var(--muted); margin: 0; }
+
+    /* Contact */
+    .contact-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start; }
+    .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+    .contact-list li { display: flex; gap: 0.6rem; align-items: baseline; }
+    .map-card iframe { width: 100%; height: 260px; border: 0; border-radius: 12px; }
+
+    /* Footer */
+    footer { background: #0c1420; color: #cdd6e1; padding: 2rem 0; margin-top: 2rem; }
+    footer a { color: #cdd6e1; }
+    .fineprint { font-size: 0.85rem; color: #aab6c5; margin-top: 1rem; }
+
+    /* Small screens */
+    @media (max-width: 680px) {
+      .nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="badge" href="#main" style="position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <div>Serving Cincinnati & the surrounding region</div>
+      <div><a href="tel:+15134480880">Call (513) 448-0880</a></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>James Maus, Attorney at Law</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#practice">Areas of Practice</a></li>
+          <li><a href="#advocate">Meet Your Advocate</a></li>
+          <li><a href="#contact">Location & Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="tel:+15134480880">Free Consultation</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <div class="eyebrow">Trusted Trial & Appellate Counsel</div>
+          <h1 id="hero-title">Clear guidance. Steadfast advocacy.</h1>
+          <p>With over 25 years of experience in criminal and civil litigation across state, federal, and military courts — from the Southwest to Alaska, Hawaii, Guam, and Panama — James Maus brings proven judgment back to his hometown of Cincinnati. He helps clients understand the law and navigate every step toward the best possible outcome.</p>
+          <div class="hero-actions">
+            <a class="cta" href="tel:+15134480880">Call (513) 448-0880</a>
+            <a class="btn-outline" href="#practice">Explore Practice Areas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas of Practice -->
+    <section id="practice" aria-labelledby="practice-title">
+      <div class="container">
+        <h2 class="section-title" id="practice-title">Areas of Practice</h2>
+        <div class="grid practice-grid">
+          <div class="card"><strong>Domestic Relations</strong><br><span class="badge">Family Law</span></div>
+          <div class="card"><strong>Criminal Defense / Court‑Martial Defense</strong></div>
+          <div class="card"><strong>Medical Malpractice</strong> <!-- If you meant "Medical Practice" originally, change here. --></div>
+          <div class="card"><strong>Personal Injury</strong></div>
+          <div class="card"><strong>Employment Law</strong></div>
+          <div class="card"><strong>Federal Disability Retirement</strong></div>
+          <div class="card"><strong>Civil Rights / Police Misconduct</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Your Advocate -->
+    <section id="advocate" aria-labelledby="advocate-title">
+      <div class="container grid" style="grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 2rem;">
+        <div class="card">
+          <h2 class="section-title" id="advocate-title">Meet Your Advocate</h2>
+          <p><strong>James Maus is committed to delivering results and fighting for justice.</strong> Our law firm prides itself on delivering unparalleled legal expertise and personalized solutions to meet your unique needs. With years of experience, we are committed to providing you with clear guidance and steadfast support in all legal matters.</p>
+          <div class="grid features">
+            <div class="feature">
+              <h3>Extensive Trial Experience</h3>
+              <p>Proven success in high‑stakes criminal and civil cases, including million‑dollar civil verdicts and not‑guilty verdicts in criminal cases.</p>
+            </div>
+            <div class="feature">
+              <h3>Appellate Advocacy</h3>
+              <p>Victories at the Ohio Supreme Court, First District Court of Appeals, and the 6th and 10th Circuit Courts of Appeals.</p>
+            </div>
+            <div class="feature">
+              <h3>Veteran Advocate</h3>
+              <p>Decorated U.S. Army JAG Corps Officer with a track record of service and dedication.</p>
+            </div>
+            <div class="feature">
+              <h3>Comprehensive Legal Services</h3>
+              <p>From discovery to depositions, trials, and appeals, every phase of litigation handled with precision and care.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <!-- Placeholder headshot block; replace src with a real image path when available -->
+          <div style="aspect-ratio: 4 / 5; background: #e9eef4; border-radius: 12px; display:grid; place-items:center; margin-bottom: 0.75rem;">
+          <img src="headshot.jpg" alt="James Maus">
+          <div style="font-weight:600;">James Maus</div>
+          <div style="color:var(--muted);">Attorney at Law</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">Location & Contact</h2>
+        <div class="grid contact-grid">
+          <div class="card">
+            <ul class="contact-list">
+              <li><strong>Address:</strong> <span>810 Sycamore Street, Cincinnati, OH 45202</span></li>
+              <li><strong>Hours:</strong> <span>Mon–Fri 9:00 AM – 5:00 PM • Sat–Sun Closed</span></li>
+              <li><strong>Phone:</strong> <a href="tel:+15134480880">(513) 448‑0880</a></li>
+              <li><strong>Website:</strong> <a href="https://jamesmauslaw.com" rel="noopener">jamesmauslaw.com</a></li>
+              <!-- Optional: add an email when ready
+              <li><strong>Email:</strong> <a href="mailto:contact@jamesmauslaw.com">contact@jamesmauslaw.com</a></li> -->
+              <li><a class="btn-outline" href="https://maps.google.com/?q=810+Sycamore+Street,+Cincinnati,+OH+45202" target="_blank" rel="noopener">Get Directions</a></li>
+            </ul>
+          </div>
+          <div class="card map-card">
+            <iframe title="Map to 810 Sycamore Street, Cincinnati, OH 45202" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=810+Sycamore+Street,+Cincinnati,+OH+45202&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: center;">
+        <div>&copy; <span id="y"></span> Law Office of James Maus. All rights reserved.</div>
+        <div><a href="#hero-title">Back to top ↑</a></div>
+      </div>
+      <div class="fineprint">This website is attorney advertising. Past results do not guarantee a similar outcome. Viewing this site or contacting the firm does not create an attorney–client relationship. Do not send confidential information until an engagement is confirmed.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Structured data to help with SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Law Office of James Maus",
+    "image": "",
+    "url": "https://jamesmauslaw.com",
+    "telephone": "+1-513-448-0880",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "810 Sycamore Street",
+      "addressLocality": "Cincinnati",
+      "addressRegion": "OH",
+      "postalCode": "45202",
+      "addressCountry": "US"
+    },
+    "areaServed": "Cincinnati Metropolitan Area",
+    "founder": {
+      "@type": "Person",
+      "name": "James Maus"
+    },
+    "openingHours": [
+      "Mo-Fr 09:00-17:00"
+    ]
+  }
+  </script>
+</body>
+</html>
